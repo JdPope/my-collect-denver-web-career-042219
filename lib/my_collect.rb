@@ -1,12 +1,13 @@
 def my_collect(languages)
   if block_given?
   i = 0 
-  
+  new_languages = []
   while i < languages.length
-  languages[i] = yield(languages[i])
+  
+  new_languages<< languages[i] = yield(languages[i])
   i = i + 1
 end
-languages
+new_languages
 
 else
   puts "Hey! No block was given!"
