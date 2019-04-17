@@ -6,6 +6,7 @@ def my_collect(languages)
   new_lan = []
   languages[i] = yield(languages[i])
   i = i + 1
+  new_lan << languages
 end
 new_lan
 
