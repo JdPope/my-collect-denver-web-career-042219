@@ -4,7 +4,7 @@ def my_collect(languages)
   new_languages = []
   while i < languages.length
   
-  new_languages<< languages[i] = yield(languages[i])
+  new_languages[i] = yield(languages[i])
   i = i + 1
 end
 new_languages
