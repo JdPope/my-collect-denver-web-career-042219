@@ -4,6 +4,7 @@ def my_collect(languages)
 
   while i < languages.length
   yield(languages[i])
+  i.upcase
   i = i + 1
 end
 languages
